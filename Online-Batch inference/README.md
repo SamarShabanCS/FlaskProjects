@@ -2,6 +2,7 @@
 - It’s a simple view as it is needed to take into account many more aspects such as the network, security, monitoring, infrastructure, orchestration or adding a database to store the data instead of using a json file.
 
 - The train.py is a python script that ingest and normalize EEG data and train two models(Linear Discriminant Analysis and Multi-layer Perceptron Neural Network models) to classify the data. The Dockerfile will be used to build our Docker image, requirements.txt (flask, flask-restful, joblib) is for the Python dependencies and api.py is the script that will be called to perform the online inference using REST APIs. train.csv are the data used to train our models, and test.json is a file containing new EEG data(1300 rows of EEG data with 160 features) that will be used with our inference models.
+- Electroencephalogram (EEG) is a recording of brain activity. During a painless test, small sensors are attached to the scalp to pick up the electrical signals produced by the brain.
 
 - The first step in building APIs is to think about the data we want to handle, how we want to handle it and what output we want with our APIs.
    - There are 3 routes using the open source web microframework Flask.
