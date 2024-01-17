@@ -8,13 +8,13 @@
 
 - Dockerfile with the jupyter/scipy-notebook image is needed as our base image. 
 - To build this image, run the following command:
-   - docker build -t my-docker-api -f Dockerfile .
+   >- docker build -t my-docker-api -f Dockerfile .
 - Now, it is the time to run the online inference which means each time a client issues a POST request to the /line/<Line>, /prediction/<Line>, /score endpoints,it will be shown the requested data (row), predicted the class of the data injected to the pre-trained models, and shown the score of the pre-trained models using all the available data.
 - To launch the web server, to run a Docker container and run the api.py script:
    >- docker run -it -p 5000:5000 my-docker-api python3 api.py
     - The -p flag exposes port 5000 in the container to port 5000 on the host machine(Port forward), -it flag allows users to see the logs from the container.
 - Now,use the web browser or the curl command to issue a POST request to the IP address http://0.0.0.0:5000/ 
-   - curl http://0.0.0.0:5000/line/232
-   - curl http://0.0.0.0:5000/prediction/232
-   - curl http://0.0.0.0:5000/score
+   >- curl http://0.0.0.0:5000/line/232
+   >- curl http://0.0.0.0:5000/prediction/232
+   >- curl http://0.0.0.0:5000/score
 #### Reference [towardsdatascience](https://towardsdatascience.com/machine-learning-prediction-in-real-time-using-docker-and-python-rest-apis-with-flask-4235aa2395eb)
