@@ -31,6 +31,7 @@
  - Serialization is the process of changing data into a form that can be stored or sent and put back into its original form later.
  - The transmitter handles the encoding of data and serialization for transmission. The process is called “serialization” because it implies that all the information in the object can be sent over a wire one bit at a time in a serial fashion (1 bit after another.)
  - ![](images/serial.png)
+ - The image is taken from [freecodecamp](https://www.freecodecamp.org/news/what-is-serialization/)
 
  
 
