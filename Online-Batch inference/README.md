@@ -17,4 +17,11 @@
    >- curl http://0.0.0.0:5000/line/232
    >- curl http://0.0.0.0:5000/prediction/232
    >- curl http://0.0.0.0:5000/score
+
+#### Note:
+- Batch inference, or offline inference, is the process of generating predictions on a batch of observations
+- Online Inference is the process of generating machine learning predictions in real time upon request. It is also known as real time inference or dynamic inference. Typically, these predictions are generated on a single observation of data at runtime.
+- ![](images/batch.png)
+- ![](images/online.png)
+- images taken from [mlinproduction.com](https://mlinproduction.com/batch-inference-vs-online-inference/)
 #### Reference [towardsdatascience](https://towardsdatascience.com/machine-learning-prediction-in-real-time-using-docker-and-python-rest-apis-with-flask-4235aa2395eb)
